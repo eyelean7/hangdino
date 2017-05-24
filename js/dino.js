@@ -12,4 +12,12 @@ function blankLetters(words){
   return blankWords.join("   ");
 }
 
-function answer
+function answerLetters(words){
+  spacedWords = [];
+  wordSplit = words.split(" ");
+  for(var i=0;i<wordSplit.length;i++){
+    letterSplit = wordSplit[i].split("");
+    spacedWords.push(letterSplit.join(" "));
+  }
+  return spacedWords.join("   ");
+}
