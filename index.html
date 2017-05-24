@@ -6,9 +6,35 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title></title>
+    <title>Dino Hangman!</title>
   </head>
-  <body>
-
-  </body>
+  <div class="container">
+    <body>
+      <h1>Dino Hangman!</h1>
+      <h2 id="intro">How many dinosaurs would you like?</h2>
+      <form class="number">
+        <input type="number" name="name" id="input">
+        <button type="submit" name="button" class="btn btn-primary btn-lg">PLAY!</button>
+      </form>
+      <div class="row">
+        <div class="col-md-6">
+          <img id="hanger" src="img/hang.png" alt="hanger" />
+        </div>
+        <div id="guess" class="col-md-6">
+          <div class="row">
+            <br>
+            <h3>guess input</h3>
+          </div>
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="row" id="blank">
+            <h3>all the blank spaces</h3>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div id="wrong">
+        <h3>wrong letters</h3>
+      </div>
+    </body>
+  </div>
 </html>
