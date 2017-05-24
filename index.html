@@ -20,24 +20,24 @@
         <div class="col-md-6">
           <img id="hanger" src="img/hang.png" alt="hanger" />
         </div>
-        <form class="guess">
-          <input type="text" name="name">
-          <button type="submit" name="button" class="btn btn-primary btn-lg">submit!</button>
-        </form>
+
         <div id="guess" class="col-md-6">
           <div class="row">
             <br>
-            <h3>guess input</h3>
+            <form id="guessForm">
+              <input id="guessInput" type="text" name="name">
+              <button type="submit" name="button" class="btn btn-primary btn-lg">guess!</button>
+            </form>
           </div>
           <br><br><br><br><br><br><br><br><br><br><br><br>
           <div class="row" id="blank">
-            <h3>all the blank spaces</h3>
           </div>
         </div>
       </div>
       <hr>
-      <div id="wrong">
-        <h3>wrong letters</h3>
+      <div>
+        <ul id="wrong">
+        </ul>
       </div>
     </body>
   </div>
